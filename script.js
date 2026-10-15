@@ -48,3 +48,24 @@ document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
 
 // Ano no rodapé
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// Balãozinho do WhatsApp
+const bubble = document.getElementById("fabBubble");
+const bubbleMsgs = [
+  "Ficou com vontade? Faça seu pedido!",
+  "Precisa de ajuda? Fala com a gente!",
+  "Quer ver o cardápio? Chama no Whats!",
+];
+let bubbleIndex = 0;
+
+setTimeout(() => {
+  bubble.classList.add("is-visible");
+  setInterval(() => {
+    bubble.classList.remove("is-visible");
+    setTimeout(() => {
+      bubbleIndex = (bubbleIndex + 1) % bubbleMsgs.length;
+      bubble.textContent = bubbleMsgs[bubbleIndex];
+      bubble.classList.add("is-visible");
+    }, 400);
+  }, 5000);
+}, 3000);
