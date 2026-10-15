@@ -221,7 +221,7 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; margin: 0; }
 @media (min-width: 640px) {
   .features { grid-template-columns: repeat(2, 1fr); }
   .gallery { grid-template-columns: repeat(3, 1fr); grid-auto-rows: 200px; }
-  .reviews { grid-template-columns: repeat(3, 1fr); }
+  .reviews { grid-template-columns: repeat(2, 1fr); }
   .footer__grid { grid-template-columns: repeat(2, 1fr); }
 }
 
