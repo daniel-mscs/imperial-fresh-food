@@ -116,7 +116,12 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; margin: 0; }
 .hero__badge {
   position: absolute; right: -90px; bottom: -90px;
   width: 300px; height: 300px; opacity: .12;
-  animation: spin 40s linear infinite;
+}
+.hero__badge svg { width: 100%; height: 100%; animation: spin 40s linear infinite; }
+.hero__badge-logo {
+  position: absolute; inset: 20%;
+  width: 60%; height: 60%;
+  border-radius: 50%; object-fit: cover;
 }
 .hero__badge text { font-family: var(--font-display); font-weight: 700; font-size: 17px; fill: var(--white); letter-spacing: 2px; }
 @keyframes spin { to { transform: rotate(360deg); } }
@@ -238,6 +243,6 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; margin: 0; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .hero__badge { animation: none; }
+  .hero__badge svg { animation: none; }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
