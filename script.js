@@ -51,21 +51,31 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 // Balãozinho do WhatsApp
 const bubble = document.getElementById("fabBubble");
+const BUBBLE_SHOW = 3000;  // quanto tempo a frase fica na tela
+const BUBBLE_PAUSE = 500;  // intervalo entre frases (TESTE) → depois troca pra 30000
+
 const bubbleMsgs = [
   "Ficou com vontade? Faça seu pedido!",
   "Precisa de ajuda? Fala com a gente!",
-  "Quer ver o cardápio? Chama no Whats!",
+  "Bateu a fome? A gente resolve!",
+  "Que tal um suco natural agora?",
+  "Um café fresquinho te esperando!",
+  "Almoço saudável? Peça já!",
+  "Opções veganas feitas no capricho!",
+  "Vai fazer um evento? Chama a gente!",
+  "Happy hour com a gente hoje?",
+  "Comida fresca, feita na hora!",
 ];
 let bubbleIndex = 0;
 
-setTimeout(() => {
+const cycleBubble = () => {
+  bubble.textContent = bubbleMsgs[bubbleIndex];
   bubble.classList.add("is-visible");
-  setInterval(() => {
+  bubbleIndex = (bubbleIndex + 1) % bubbleMsgs.length;
+  setTimeout(() => {
     bubble.classList.remove("is-visible");
-    setTimeout(() => {
-      bubbleIndex = (bubbleIndex + 1) % bubbleMsgs.length;
-      bubble.textContent = bubbleMsgs[bubbleIndex];
-      bubble.classList.add("is-visible");
-    }, 400);
-  }, 5000);
-}, 3000);
+    setTimeout(cycleBubble, BUBBLE_PAUSE);
+  }, BUBBLE_SHOW);
+};
+
+setTimeout(cycleBubble, 3000);
