@@ -236,39 +236,7 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; margin: 0; }
   border-color: transparent transparent transparent var(--white);
 }
 .fab__bubble.is-visible { opacity: 1; transform: none; pointer-events: auto; }
-.fab-insta {
-  position: fixed; right: 22px; bottom: 88px; z-index: 60;
-  width: 46px; height: 46px; border-radius: 50%;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-  color: var(--white);
-  display: grid; place-items: center;
-  box-shadow: 0 6px 18px rgba(0,0,0,.22);
-  transition: transform .2s;
-}
-.fab-insta:hover { transform: scale(1.08); }
-.fab-insta svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; }
-.fab-insta {
-  position: fixed; right: 22px; bottom: 88px; z-index: 60;
-  width: 46px; height: 46px; border-radius: 50%;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-  color: var(--white);
-  display: grid; place-items: center;
-  box-shadow: 0 6px 18px rgba(0,0,0,.22);
-  transition: transform .2s;
-}
-.fab-insta:hover { transform: scale(1.08); }
-.fab-insta svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; }
-.fab-insta {
-  position: fixed; right: 22px; bottom: 88px; z-index: 60;
-  width: 46px; height: 46px; border-radius: 50%;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-  color: var(--white);
-  display: grid; place-items: center;
-  box-shadow: 0 6px 18px rgba(0,0,0,.22);
-  transition: transform .2s;
-}
-.fab-insta:hover { transform: scale(1.08); }
-.fab-insta svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; }
+
 
 /* Animação de entrada */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }

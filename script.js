@@ -51,8 +51,8 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 // Balãozinho do WhatsApp
 const bubble = document.getElementById("fabBubble");
-const BUBBLE_SHOW = 3000;  // quanto tempo a frase fica na tela
-const BUBBLE_PAUSE = 500;  // intervalo entre frases (TESTE) → depois troca pra 30000
+const BUBBLE_SHOW = 5000;   // quanto tempo a frase fica na tela
+const BUBBLE_PAUSE = 15000; // intervalo entre uma frase e outra
 
 const bubbleMsgs = [
   "Ficou com vontade? Faça seu pedido!",
