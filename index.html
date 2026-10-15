@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imperial Fresh Food · Santa Maria</title>
+  <meta name="description" content="Comida saudável, sucos, cafés e lanches frescos no Centro de Santa Maria, RS. Opções veganas, happy hour e espaço para eventos." />
+  <meta name="theme-color" content="#2d4a2b" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="brand" aria-label="Imperial Fresh Food — início">
+        <svg class="brand__logo" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="50" fill="currentColor"/>
+          <g fill="#2d4a2b">
+            <circle cx="30" cy="37" r="5"/><circle cx="50" cy="31" r="6"/><circle cx="70" cy="37" r="5"/>
+            <path d="M28 42 L33 62 L67 62 L72 42 Q64 56 58 52 Q52 46 50 36 Q48 46 42 52 Q36 56 28 42Z"/>
+            <rect x="34" y="65" width="32" height="8" rx="1"/>
+          </g>
+        </svg>
+        <span class="brand__name">imperial<small>fresh food</small></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a href="#" class="btn btn--sm btn--light js-whatsapp header__cta">Pedir</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <p class="eyebrow">health · fresh · farm · food</p>
+        <h1 class="hero__title">Comida fresca,<br />do jeito que <em>você merece.</em></h1>
+        <p class="hero__text">Cafés, sucos naturais, lanches e pratos saudáveis preparados na hora, no coração de Santa Maria.</p>
+        <div class="hero__actions">
+          <a href="#" class="btn btn--light js-whatsapp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"/></svg>
+            Fazer pedido
+          </a>
+          <a href="#contato" class="btn btn--ghost">Como chegar</a>
+        </div>
+        <a href="#avaliacoes" class="hero__rating">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <strong>4,6</strong> no Google · 495 avaliações
+        </a>
+      </div>
+      <div class="hero__badge" aria-hidden="true">
+        <svg viewBox="0 0 200 200">
+          <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+          <text><textPath href="#circ">health · fresh · farm · food · imperial ·</textPath></text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section class="section" id="diferenciais">
+      <div class="container">
+        <p class="eyebrow eyebrow--dark">Por que o Imperial</p>
+        <h2 class="section__title">Mais que um café. Um lugar pra se sentir bem.</h2>
+
+        <ul class="features">
+          <li class="feature reveal">
+            <div class="feature__icon"><svg viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10Z"/><path d="M2 21c0-3 1.9-5.4 5.2-6.1C9.5 14.5 12 13 13 12"/></svg></div>
+            <h3>Opções veganas</h3>
+            <p>Cardápio com escolhas 100% vegetais, sem abrir mão do sabor.</p>
+          </li>
+          <li class="feature reveal">
+            <div class="feature__icon"><svg viewBox="0 0 24 24"><path d="M8 22h8M12 11v11M5 3l7 8 7-8Z"/><path d="M7.5 6h9"/></svg></div>
+            <h3>Happy hour</h3>
+            <p>Fim de tarde leve, com drinks, sucos e petiscos pra dividir.</p>
+          </li>
+          <li class="feature reveal">
+            <div class="feature__icon"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></div>
+            <h3>Espaço para eventos</h3>
+            <p>Ambiente privativo para aniversários, reuniões e confraternizações.</p>
+          </li>
+          <li class="feature reveal">
+            <div class="feature__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.5 12.9 17 22l-5-3-5 3 1.5-9.1"/></svg></div>
+            <h3>Selo A</h3>
+            <p>Nota máxima na Categorização de Restaurantes: higiene e qualidade comprovadas.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="section section--tint" id="galeria">
+      <div class="container">
+        <p class="eyebrow eyebrow--dark">Galeria</p>
+        <h2 class="section__title">Feito na hora, todo dia.</h2>
+
+        <!-- Troque cada .gallery__item por <img src="assets/foto-1.jpg" alt="..."> quando tiver as fotos -->
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--tall reveal"><span>Bowl</span></figure>
+          <figure class="gallery__item reveal"><span>Sucos</span></figure>
+          <figure class="gallery__item reveal"><span>Café</span></figure>
+          <figure class="gallery__item gallery__item--wide reveal"><span>Ambiente</span></figure>
+          <figure class="gallery__item reveal"><span>Lanches</span></figure>
+          <figure class="gallery__item reveal"><span>Doces</span></figure>
+        </div>
+
+        <a href="https://instagram.com/imperialfreshfood" target="_blank" rel="noopener" class="link-arrow">Veja mais no @imperialfreshfood →</a>
+      </div>
+    </section>
+
+    <!-- AVALIAÇÕES -->
+    <section class="section" id="avaliacoes">
+      <div class="container">
+        <div class="rating-card reveal">
+          <div class="rating-card__score">
+            <span class="rating-card__number">4,6</span>
+            <span class="stars stars--lg" aria-label="4,6 de 5 estrelas">★★★★★</span>
+            <span class="rating-card__count">495 avaliações no Google</span>
+          </div>
+
+          <!-- Depoimentos de exemplo: substitua por avaliações reais do Google (com autorização) -->
+          <div class="reviews">
+            <blockquote class="review">
+              <p>“Ambiente lindo e comida muito fresca. Virou meu lugar de almoço no Centro.”</p>
+              <cite>— Cliente Google</cite>
+            </blockquote>
+            <blockquote class="review">
+              <p>“Ótimas opções veganas e o suco verde é o melhor da cidade.”</p>
+              <cite>— Cliente Google</cite>
+            </blockquote>
+            <blockquote class="review">
+              <p>“Fizemos um aniversário no espaço privativo e foi perfeito.”</p>
+              <cite>— Cliente Google</cite>
+            </blockquote>
+          </div>
+
+          <a href="https://www.google.com/maps/search/?api=1&query=Imperial+Fresh+Food+Santa+Maria" target="_blank" rel="noopener" class="btn btn--dark">Ver no Google</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container cta__inner">
+        <h2>Bateu a fome?</h2>
+        <p>Peça pelo WhatsApp ou venha nos visitar.</p>
+        <a href="#" class="btn btn--light js-whatsapp">Fazer pedido</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="footer" id="contato">
+    <div class="container footer__grid">
+      <div>
+        <span class="brand__name brand__name--footer">imperial<small>fresh food</small></span>
+        <p class="footer__tag">health · fresh · farm · food</p>
+      </div>
+
+      <div>
+        <h3>Endereço</h3>
+        <p>R. Venâncio Aires, 2050 — Centro<br />Santa Maria, RS</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=R.+Venâncio+Aires,+2050+Santa+Maria+RS" target="_blank" rel="noopener">Abrir no mapa →</a>
+      </div>
+
+      <div>
+        <h3>Horário</h3>
+        <!-- CONFIRMAR horários com o cliente -->
+        <p>Seg a Sex · 8h às 20h<br />Sábado · 9h às 18h<br />Domingo · fechado</p>
+      </div>
+
+      <div>
+        <h3>Contato</h3>
+        <p><a href="tel:+5555991599416">(55) 99159-9416</a></p>
+        <div class="socials">
+          <a href="https://instagram.com/imperialfreshfood" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>
+          </a>
+          <a href="#" class="js-whatsapp" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M3 21l1.6-4.7A8.5 8.5 0 1 1 7.9 19.6Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="footer__copy container">© <span id="year"></span> Imperial Fresh Food</p>
+  </footer>
+
+  <a href="#" class="fab js-whatsapp" aria-label="Pedir pelo WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
