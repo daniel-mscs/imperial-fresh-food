@@ -1,6 +1,6 @@
 // ===== Config =====
 const WHATSAPP_NUMBER = "5555991599416";
-const WHATSAPP_MSG = "Olá! Vim pelo site e gostaria de fazer um pedido 🥗";
+const WHATSAPP_MSG = "Olá! Vim pelo site e gostaria de fazer um pedido.";
 
 // Links do WhatsApp
 const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MSG)}`;
